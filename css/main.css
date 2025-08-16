@@ -237,7 +237,7 @@ body{
 #navBar{
     display: flex;
     justify-content: center;
-    padding: 3vh;
+    padding: 3vh 3vh 0vh 3vh;
     display: inline-block;
     background-color: var(--bgHeader);
 }
