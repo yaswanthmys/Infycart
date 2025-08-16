@@ -181,12 +181,11 @@ body{
     font-weight: 100;
     font-family: "Cal Sans", sans-serif;
     margin: 0px;
-    font-size: 20rem;
+    font-size: 20vw;
     color: var(--text);
     white-space: nowrap;
     user-select: none;
     z-index: 0;
-    bottom: 7vh;
     overflow: hidden;
 }
 
@@ -205,13 +204,12 @@ body{
 .logo{
     animation: upToDown 3.5s 50ms ease-out;
     width: 20rem;
-    height: 20rem;
     border-radius: 50%;
     object-fit: cover;
     z-index: 1;
     position: relative;
     left: 0.4vw;
-    top: 4vh;
+    top: 8vh;
     box-shadow: 0px 0px 40px 15px rgb(140, 142, 127);
 }
 
@@ -235,9 +233,12 @@ body{
 }
 
 #navBar{
+    position: fixed;
+    width: 100vw;
+    z-index: 4;
     display: flex;
     justify-content: center;
-    padding: 3vh;
+    padding: 1vh 1vh 1vh 1vh;
     display: inline-block;
     background-color: var(--bgHeader);
 }
