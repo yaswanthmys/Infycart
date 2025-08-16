@@ -176,28 +176,22 @@ body{
     margin: 0px;
 }
 
-#logoHolder p{
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
     position: relative;
-    font-weight: 100;
-    font-family: "Cal Sans", sans-serif;
-    margin: 0px;
-    font-size: 20vw;
-    color: var(--text);
-    white-space: nowrap;
-    user-select: none;
-    z-index: 0;
-    overflow: hidden;
-}
-
-#logoHolder *{
-    min-width: 25vh;
+    width: 70vw;
+    border-radius: 2vw;
+    left: 10vw;
+    top: 12vh;
 }
 
 #logoHolder{
     user-select: none;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: left;
     position: relative;
 }
 
@@ -208,8 +202,9 @@ body{
     object-fit: cover;
     z-index: 1;
     position: relative;
-    left: 0.4vw;
-    top: 8vh;
+    left: 5vw;
+    top: 12vh;
+    width: 15vw;
     box-shadow: 0px 0px 40px 15px rgb(140, 142, 127);
 }
 
@@ -289,7 +284,7 @@ body{
 
 #categoriesText{
     color: var(--text);
-    margin: 15vh 0vw 5vh 0vh;
+    margin: 5vh 0vw 5vh 0vh;
     font-size: 3rem;
     font-family: "Cal Sans", sans-serif;
 }
