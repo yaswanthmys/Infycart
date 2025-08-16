@@ -39,6 +39,8 @@ rgb(215, 211, 191)
 
 #Btext{
     animation: leftToLeft 3s 100ms ease-out;
+    position: relative;
+    left: 4vw;
 }
 
 @keyframes upToDown {
@@ -207,6 +209,7 @@ body{
     object-fit: cover;
     z-index: 1;
     position: relative;
+    left: 0.4vw;
     top: 4vh;
     box-shadow: 0px 0px 40px 15px rgb(140, 142, 127);
 }
@@ -253,7 +256,7 @@ body{
 
 #categoriesGrid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     gap: 2vw;
     justify-items: center;
@@ -263,8 +266,8 @@ body{
 .category{
     border-radius: 1rem;
     background-color: var(--bgIntro);
-    width: 30vw;
-    height: 30vh;
+    width: 16vw;
+    height: 40vh;
     scale: 100%;
     box-shadow: 0px 0px 0px 0px rgb(175, 174, 147);
     transition: 80ms ease-in-out;
@@ -311,10 +314,17 @@ footer{
 }
 
 .category{
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     font-size: 2em;
     font-family: "Cal Sans", sans-serif;
     color: var(--text);
+}
+
+.category *{
+    font-size: 1.6vw;
+    max-width: 80%;
 }
