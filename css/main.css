@@ -163,7 +163,7 @@ header{
     background-color: var(--bgHeader);
     margin: 0px;
     padding: 0px;
-    height: 50vh;
+    height: min(50vh, 30vw);
     border-radius: 0px 0px 45px 45px;
     box-shadow: 0px 0px 80px rgb(133, 132, 111);
 }
@@ -227,6 +227,13 @@ body{
     z-index: 3;
 }
 
+#logoText{
+    text-align: center;
+    margin: auto 5vw auto 5vw;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 300;
+}
+
 #navBar{
     position: fixed;
     width: 100vw;
@@ -240,10 +247,11 @@ body{
 
 #navBar div{
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 #searchBarHolder{
+    display: flex;
     margin: 1vh 0vh 1vh 1vw;
 }
 
