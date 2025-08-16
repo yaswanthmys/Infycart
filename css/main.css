@@ -10,6 +10,7 @@ rgb(215, 211, 191)
     --bgHeader: rgb(215, 211, 191);
     --bgBody: rgb(216, 206, 178);
     --text: rgb(165, 157, 132);
+    --textDark: rgb(101, 96, 81);
     --footer: rgb(215, 211, 191);
 }
 
@@ -218,12 +219,13 @@ body{
     position: relative;
     z-index: 2;
     font-family: "Cal Sans", sans-serif;
-    width: 8vw;
+    width: 6vw;
     font-size: 1.2rem;
     padding: 1em;
     border-radius: 1em;
     background-color: var(--bgHeader);
     transition: all 100ms ease-in-out;
+    text-align: center;
 }
 
 .navBarBtn:hover{
@@ -239,6 +241,43 @@ body{
     display: inline-block;
     background-color: var(--bgHeader);
 }
+
+#navBar div{
+    display: flex;
+    justify-content: left;
+}
+
+#searchBarHolder{
+    margin: 1vh 0vh 1vh 1vw;
+}
+
+#search{
+    padding: 1em;
+    background-color: rgb(245, 242, 229);
+    border-radius: 2vw 0vw 0vw 2vw;
+    border: none;
+    min-width: 40vw;
+    font-family: "Cal Sans", sans-serif;
+    color: rgb(100, 100, 100);
+}
+
+#search:active{
+    border: 4px block black;
+}
+
+#submitBtn{
+    font-family: "Cal Sans", sans-serif;
+    color: var(--textDark);
+    padding: 1em;
+    background-color: rgb(233, 226, 194);
+    border-radius: 0vw 2vw 2vw 0vw;
+    border: none;
+}
+
+#submitBtn:hover{
+    background-color: rgb(231, 221, 179);
+}
+
 
 #categoriesGridHolder{
     display: flex;
@@ -321,7 +360,7 @@ footer{
     justify-content: space-evenly;
     font-size: 2em;
     font-family: "Cal Sans", sans-serif;
-    color: var(--text);
+    color: var(--textDark);
 }
 
 .category *{
