@@ -368,3 +368,38 @@ footer{
     font-size: 1.6vw;
     max-width: 80%;
 }
+
+
+/* products page */
+
+header.productsPageHeader{
+    height: 0vh;
+}
+
+#productsHolderFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10vh;
+}
+
+#productsHolder{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 85vw;
+    gap: 3vh;
+    margin: 10vh;
+}
+
+.product{
+    background-color: var(--bgHeader);
+    border-radius: 2vh;
+    height: 35vh;
+}
+
+.product img{
+    height: 35vh;
+    border-radius: 2vh;
+}
