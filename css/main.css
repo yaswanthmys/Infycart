@@ -354,6 +354,7 @@ footer{
 }
 
 .category{
+    text-decoration: none;
     position: relative;
     display: flex;
     align-items: center;
@@ -397,6 +398,7 @@ header.productsPageHeader{
     background-color: var(--bgHeader);
     border-radius: 2vh;
     height: 35vh;
+    text-decoration: none;
 }
 
 .product img{
