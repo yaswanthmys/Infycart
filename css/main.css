@@ -163,7 +163,7 @@ header{
     background-color: var(--bgHeader);
     margin: 0px;
     padding: 0px;
-    height: 50vh;
+    height: min(50vh, 30vw);
     border-radius: 0px 0px 45px 45px;
     box-shadow: 0px 0px 80px rgb(133, 132, 111);
 }
@@ -176,28 +176,22 @@ body{
     margin: 0px;
 }
 
-#logoHolder p{
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
     position: relative;
-    font-weight: 100;
-    font-family: "Cal Sans", sans-serif;
-    margin: 0px;
-    font-size: 20vw;
-    color: var(--text);
-    white-space: nowrap;
-    user-select: none;
-    z-index: 0;
-    overflow: hidden;
-}
-
-#logoHolder *{
-    min-width: 25vh;
+    width: 70vw;
+    border-radius: 2vw;
+    left: 10vw;
+    top: 12vh;
 }
 
 #logoHolder{
     user-select: none;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: left;
     position: relative;
 }
 
@@ -208,8 +202,9 @@ body{
     object-fit: cover;
     z-index: 1;
     position: relative;
-    left: 0.4vw;
-    top: 8vh;
+    left: 5vw;
+    top: 12vh;
+    width: 15vw;
     box-shadow: 0px 0px 40px 15px rgb(140, 142, 127);
 }
 
@@ -232,6 +227,13 @@ body{
     z-index: 3;
 }
 
+#logoText{
+    text-align: center;
+    margin: auto 5vw auto 5vw;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 300;
+}
+
 #navBar{
     position: fixed;
     width: 100vw;
@@ -245,10 +247,11 @@ body{
 
 #navBar div{
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 #searchBarHolder{
+    display: flex;
     margin: 1vh 0vh 1vh 1vw;
 }
 
@@ -289,7 +292,7 @@ body{
 
 #categoriesText{
     color: var(--text);
-    margin: 15vh 0vw 5vh 0vh;
+    margin: 5vh 0vw 5vh 0vh;
     font-size: 3rem;
     font-family: "Cal Sans", sans-serif;
 }
