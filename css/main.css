@@ -399,9 +399,32 @@ header.productsPageHeader{
     border-radius: 2vh;
     height: 35vh;
     text-decoration: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .product img{
     height: 35vh;
     border-radius: 2vh;
+}
+
+.productInfo{
+    margin: 2vw;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+}
+
+.productName{
+    font-size: 1.6em;
+}
+
+.addToCart{
+    padding: 0.5vw;
+    background-color: rgb(233, 226, 194);
+    border: none;
+}
+
+.addToCart:hover{
+    background-color: rgb(190, 184, 157);
 }
