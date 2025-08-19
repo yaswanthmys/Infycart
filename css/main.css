@@ -6,12 +6,14 @@ rgb(215, 211, 191)
 */
 
 :root{
-    --bgIntro: rgb(236, 235, 222);
-    --bgHeader: rgb(215, 211, 191);
-    --bgBody: rgb(216, 206, 178);
-    --text: rgb(165, 157, 132);
-    --textDark: rgb(101, 96, 81);
-    --footer: rgb(215, 211, 191);
+    --bgIntro: rgb(18, 138, 251);
+    --bgHeader: rgb(18, 138, 251);
+    --bgBody: rgb(202 240 248);
+    --text: rgb(30, 36, 44);
+    --textDark: rgb(0, 0, 0);
+    --footer: rgb(18, 138, 251);
+    --search: rgb(185, 219, 230);
+    --button: rgb(125, 172, 219);
 }
 
 #intro{
@@ -88,7 +90,7 @@ rgb(215, 211, 191)
         transform: translate(0vw, 0vh);
     }
 }
-
+/* 
 @keyframes introBackground {
     0% {
         transform: translate(0vh, 0vh);
@@ -115,7 +117,7 @@ rgb(215, 211, 191)
     100% {
         transform: translate(0vw, 100vh) rotate(-70deg);
     }
-}
+} */
 
 /* @keyframes intro {
     0% {
@@ -165,7 +167,7 @@ header{
     padding: 0px;
     height: min(50vh, 30vw);
     border-radius: 0px 0px 45px 45px;
-    box-shadow: 0px 0px 80px rgb(133, 132, 111);
+    box-shadow: 0px 0px 80px rgb(49, 138, 183);
 }
 
 body{
@@ -205,7 +207,7 @@ body{
     left: 5vw;
     top: 12vh;
     width: 15vw;
-    box-shadow: 0px 0px 40px 15px rgb(140, 142, 127);
+    box-shadow: 0px 0px 40px 15px rgb(165, 182, 254);
 }
 
 .navBarBtn{
@@ -257,7 +259,7 @@ body{
 
 #search{
     padding: 1em;
-    background-color: rgb(245, 242, 229);
+    background-color: var(--search);
     border-radius: 2vw 0vw 0vw 2vw;
     border: none;
     min-width: 40vw;
@@ -273,7 +275,7 @@ body{
     font-family: "Cal Sans", sans-serif;
     color: var(--textDark);
     padding: 1em;
-    background-color: rgb(233, 226, 194);
+    background-color: var(--button);
     border-radius: 0vw 2vw 2vw 0vw;
     border: none;
 }
@@ -328,7 +330,7 @@ footer{
     background-color: var(--footer);
     border-radius: 45px 45px 0px 0px;
     margin: 15vh 0vw 0vh 0vw;
-    box-shadow: 0px 0px 80px rgb(133, 132, 111);
+    box-shadow: 0px 0px 80px rgb(75, 164, 192);
 }
 
 .anchorHolder{
@@ -341,7 +343,7 @@ footer{
     font-family: "Cal Sans", sans-serif;
     font-weight: 600;
     font-size: 1.8em;
-    color: rgb(105, 105, 80);
+    color: rgb(0, 0, 0);
 }
 
 .anchorHolder a{
