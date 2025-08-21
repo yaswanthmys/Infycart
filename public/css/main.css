@@ -6,14 +6,14 @@ rgb(215, 211, 191)
 */
 
 :root{
-    --bgIntro: rgb(18, 138, 251);
-    --bgHeader: rgb(18, 138, 251);
-    --bgBody: rgb(202 240 248);
-    --text: rgb(30, 36, 44);
-    --textDark: rgb(0, 0, 0);
-    --footer: rgb(18, 138, 251);
-    --search: rgb(185, 219, 230);
-    --button: rgb(125, 172, 219);
+    --bgIntro: rgb(236, 235, 222);
+    --bgHeader: rgb(215, 211, 191);
+    --bgBody: rgb(216, 206, 178);
+    --text: rgb(165, 157, 132);
+    --textDark: rgb(101, 96, 81);
+    --footer: rgb(215, 211, 191);
+    --search: rgb(245, 242, 229);
+    --button: rgb(243, 227, 176);
 }
 
 #intro{
