@@ -167,7 +167,7 @@ header{
     padding: 0px;
     height: min(50vh, 30vw);
     border-radius: 0px 0px 45px 45px;
-    box-shadow: 0px 0px 80px rgb(49, 138, 183);
+    box-shadow: 0px 0px 80px rgb(125, 117, 90);
 }
 
 body{
@@ -207,7 +207,7 @@ body{
     left: 5vw;
     top: 12vh;
     width: 15vw;
-    box-shadow: 0px 0px 40px 15px rgb(165, 182, 254);
+    box-shadow: 0px 0px 40px 15px rgb(120, 120, 106);
 }
 
 .navBarBtn{
@@ -330,7 +330,7 @@ footer{
     background-color: var(--footer);
     border-radius: 45px 45px 0px 0px;
     margin: 15vh 0vw 0vh 0vw;
-    box-shadow: 0px 0px 80px rgb(75, 164, 192);
+    box-shadow: 0px 0px 80px rgb(80, 74, 53);
 }
 
 .anchorHolder{
