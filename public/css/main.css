@@ -323,6 +323,7 @@ body{
     justify-content: space-evenly;
     font-family: "Cal Sans", sans-serif;
     color: var(--textDark);
+    text-decoration: none;
 }
 
 .category:hover{
