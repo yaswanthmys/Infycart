@@ -10,7 +10,7 @@ rgb(215, 211, 191)
     --bgHeader: rgb(215, 211, 191);
     --bgBody: rgb(216, 206, 178);
     --text: rgb(165, 157, 132);
-    --textDark: rgb(101, 96, 81);
+    --textDark: rgb(0, 0, 0);
     --footer: rgb(215, 211, 191);
     --search: rgb(245, 242, 229);
     --button: rgb(243, 227, 176);
@@ -193,7 +193,7 @@ body{
     text-align: center;
     margin: auto 5vw auto 5vw;
     font-family: "Cal Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 #navBar{
@@ -264,12 +264,12 @@ body{
     color: var(--text);
     margin: 5vh 0vw 5vh 0vh;
     font-size: 3rem;
-    font-family: "Cal Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 #categoriesGrid{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     gap: 2vw;
     justify-items: center;
@@ -308,12 +308,25 @@ body{
     font-weight: 100;
 }
 
+.categoryHolder data{
+    font-weight: 400;
+}
+
+.categoryHolder p{
+    font-weight: 500;
+}
+
 .categoryHolder data, p{
     margin: 0% 0% 0% 5%;
     align-self: flex-start;
 }
 
+.categoryHolder img{
+    margin-bottom: 1vw;
+}
+
 .categoryHolder{
+    font-family: "Montserrat", sans-serif;
     margin: 10%;
     display: flex;
     align-items: center;
