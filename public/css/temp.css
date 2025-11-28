@@ -263,7 +263,7 @@ body{
 #categoriesText{
     color: var(--text);
     margin: 5vh 0vw 5vh 0vh;
-    font-size: 3rem;
+    font-size: 3vw;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -277,10 +277,10 @@ body{
 }
 
 .category{
-    border-radius: 1rem;
+    border-radius: 1vw;
     background-color: var(--bgIntro);
     width: 16vw;
-    height: 40vh;
+    height: 20vw;
     scale: 100%;
     box-shadow: 0px 0px 0px 0px rgb(175, 174, 147);
     transition: 80ms ease-in-out;
@@ -309,11 +309,11 @@ body{
 }
 
 .categoryHolder data{
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .categoryHolder p{
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .categoryHolder data, p{
@@ -327,7 +327,7 @@ body{
 
 .categoryHolder{
     font-family: "Montserrat", sans-serif;
-    margin: 10%;
+    margin: 5%;
     display: flex;
     align-items: center;
     flex-direction: column;
