@@ -144,7 +144,6 @@ body{
 }
 
 .logo{
-    width: 20rem;
     border-radius: 50%;
     object-fit: cover;
     z-index: 1;
@@ -160,11 +159,10 @@ body{
 }
 
 #topSpaceFiller{
-    min-height: 5vw;
+    min-height: 4vw;
 }
 
 #logoHolderFiller{
-    padding: 2vw;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -261,6 +259,7 @@ body{
 
 
 #categoriesGridHolder{
+    padding: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,7 +268,7 @@ body{
 
 #categoriesText{
     color: var(--text);
-    margin: 5vh 0vw 5vh 0vh;
+    margin: 4vw 0vw 4vw 0vh;
     font-size: 3vw;
     font-family: "Montserrat", sans-serif;
 }
@@ -286,8 +285,8 @@ body{
 .category{
     border-radius: 1vw;
     background-color: var(--bgIntro);
-    width: 16vw;
-    height: 20vw;
+    width: auto;
+    height: auto;
     scale: 100%;
     box-shadow: 0px 0px 0px 0px rgb(175, 174, 147);
     transition: 80ms ease-in-out;
@@ -342,12 +341,13 @@ body{
 }
 
 footer{
-    height: 70vh;
+    min-height: auto;
+    padding-bottom: 20vw;
     display: flex;
     justify-content: space-evenly;
     background-color: var(--footer);
-    border-radius: 45px 45px 0px 0px;
-    margin: 15vh 0vw 0vh 0vw;
+    border-radius: 2vw 2vw 0px 0px;
+    margin: 8vw 0vw 0vh 0vw;
     box-shadow: 0px 0px 80px rgb(80, 74, 53);
 }
 
@@ -360,14 +360,14 @@ footer{
 
     font-family: "Cal Sans", sans-serif;
     font-weight: 600;
-    font-size: 1.8em;
+    font-size: 1.8vw;
     color: rgb(0, 0, 0);
 }
 
 .anchorHolder a{
     font-family: "Cal Sans", sans-serif;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1.4vw;
     text-decoration: none;
     color: rgb(55, 55, 48);
 }
@@ -382,24 +382,1148 @@ footer{
 /* Small devices (phones, portrait, less than 600px) */
 @media (max-width: 600px) {
 
+    header{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        border-radius: 0vw 0vw 2vw 2vw;
+        box-shadow: 0px 0px 80px rgb(125, 117, 90);
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .banner{
+        margin: 1vw;
+        width: 90vw;
+        border-radius: 2vw;
+    }
+
+    .logo{
+        display: none;
+        border-radius: 50%;
+        object-fit: cover;
+        z-index: 1;
+        width: 14vw;
+        box-shadow: 0px 0px 40px 15px rgb(120, 120, 106);
+    }
+
+    #logoText{
+        flex: 1;
+        text-align: right;
+        font-size: 2.8vw;
+        margin: 0vw 5vw 0vw 0vw;
+        font-weight: 200;
+    }
+
+
+    #logoHolder{
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #topSpaceFiller{
+        min-height:7vw;
+    }
+
+    #logoHolderFiller{
+        padding: 1.5vw;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navBarBtn{
+        position: relative;
+        z-index: 2;
+        width: 6%;
+        font-size: 1.2vw;
+        padding: 1vw;
+        border-radius: 1em;
+        transition: all 100ms ease-in-out;
+        text-align: center;
+    }
+
+    .navBarBtn:hover{
+        box-shadow: 0px 0px 60px 2px rgb(187, 184, 167);
+        z-index: 3;
+    }
+
+    .emptySpace{
+        flex: 1;
+    }
+
+    #navBar{
+        max-height: 4vw;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        z-index: 4;
+        display: flex;
+        padding: 2vw;
+    }
+
+    #navBar div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #searchBarHolder{
+        flex: 1;
+        display: flex;
+        /* margin: 0.5vw 0vw 0.5vw 0.5vw; */
+    }
+
+    #searchBarHolder *{
+        font-size: 2.5vw;
+    }
+
+    #search{
+        padding: 1.3vw;
+        border-radius: 2vw 0vw 0vw 2vw;
+        border: none;
+        min-width: 40vw;
+    }
+
+    #search:active{
+        border: 4px block black;
+    }
+
+    #submitBtn{
+        padding: 1.3vw;
+        border-radius: 0vw 2vw 2vw 0vw;
+        border: none;
+    }
+
+    #categoriesGridHolder{
+        padding: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #categoriesText{
+        margin: 4vw 0vw 4vw 0vh;
+        font-size: 4vw;
+    }
+
+    #categoriesGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 2vw;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .category{
+        border-radius: 1vw;
+        width: auto;
+        height: auto;
+        scale: 100%;
+        box-shadow: 0px 0px 0px 0px rgb(175, 174, 147);
+        transition: 80ms ease-in-out;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .category:hover{
+        scale: 102%;
+        box-shadow: 0px 0px 10px 5px rgb(175, 174, 147);
+    }
+
+    .category img{
+        max-width: 100%; 
+    }
+
+    .categoryHolder *{
+        font-size: 2.8vw;
+        font-weight: 100;
+    }
+
+    .categoryHolder data{
+        font-weight: 500;
+    }
+
+    .categoryHolder p{
+        font-weight: 600;
+    }
+
+    .categoryHolder data, p{
+        margin: 0% 0% 0% 5%;
+        align-self: flex-start;
+    }
+
+    .categoryHolder img{
+        margin-bottom: 1vw;
+    }
+
+    .categoryHolder{
+        margin: 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    footer{
+        min-height: auto;
+        padding-bottom: 20vw;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 2vw 2vw 0px 0px;
+        margin: 8vw 0vw 0vh 0vw;
+        box-shadow: 0px 0px 80px rgb(80, 74, 53);
+    }
+
+    .anchorHolder{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .anchorHolder h4{
+        font-weight: 600;
+        font-size: 2.8vw;
+    }
+
+    .anchorHolder a{
+        font-weight: 400;
+        font-size: 2.6vw;
+    }
+
+
 }
 
 /* Medium devices (landscape phones / small tablets, 600px to 768px) */
 @media (min-width: 600px) and (max-width: 768px) {
+z
+    header{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        border-radius: 0vw 0vw 2vw 2vw;
+        box-shadow: 0px 0px 80px rgb(125, 117, 90);
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .banner{
+        margin: 1vw;
+        width: 90vw;
+        border-radius: 2vw;
+    }
+
+    .logo{
+        display: none;
+        border-radius: 50%;
+        object-fit: cover;
+        z-index: 1;
+        width: 14vw;
+        box-shadow: 0px 0px 40px 15px rgb(120, 120, 106);
+    }
+
+    #logoText{
+        flex: 1;
+        text-align: right;
+        font-size: 2.8vw;
+        margin: 0vw 5vw 0vw 0vw;
+        font-weight: 200;
+    }
+
+
+    #logoHolder{
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #topSpaceFiller{
+        min-height:7vw;
+    }
+
+    #logoHolderFiller{
+        padding: 1.5vw;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navBarBtn{
+        position: relative;
+        z-index: 2;
+        width: 6%;
+        font-size: 1.2vw;
+        padding: 1vw;
+        border-radius: 1em;
+        transition: all 100ms ease-in-out;
+        text-align: center;
+    }
+
+    .navBarBtn:hover{
+        box-shadow: 0px 0px 60px 2px rgb(187, 184, 167);
+        z-index: 3;
+    }
+
+    .emptySpace{
+        flex: 1;
+    }
+
+    #navBar{
+        max-height: 4vw;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        z-index: 4;
+        display: flex;
+        padding: 2vw;
+    }
+
+    #navBar div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #searchBarHolder{
+        flex: 1;
+        display: flex;
+        /* margin: 0.5vw 0vw 0.5vw 0.5vw; */
+    }
+
+    #searchBarHolder *{
+        font-size: 2.5vw;
+    }
+
+    #search{
+        padding: 1.3vw;
+        border-radius: 2vw 0vw 0vw 2vw;
+        border: none;
+        min-width: 40vw;
+    }
+
+    #search:active{
+        border: 4px block black;
+    }
+
+    #submitBtn{
+        padding: 1.3vw;
+        border-radius: 0vw 2vw 2vw 0vw;
+        border: none;
+    }
+
+    #categoriesGridHolder{
+        padding: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #categoriesText{
+        margin: 4vw 0vw 4vw 0vh;
+        font-size: 4vw;
+    }
+
+    #categoriesGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 2vw;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .category{
+        border-radius: 1vw;
+        width: auto;
+        height: auto;
+        scale: 100%;
+        box-shadow: 0px 0px 0px 0px rgb(175, 174, 147);
+        transition: 80ms ease-in-out;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .category:hover{
+        scale: 102%;
+        box-shadow: 0px 0px 10px 5px rgb(175, 174, 147);
+    }
+
+    .category img{
+        max-width: 100%; 
+    }
+
+    .categoryHolder *{
+        font-size: 2.2vw;
+        font-weight: 100;
+    }
+
+    .categoryHolder data{
+        font-weight: 500;
+    }
+
+    .categoryHolder p{
+        font-weight: 600;
+    }
+
+    .categoryHolder data, p{
+        margin: 0% 0% 0% 5%;
+        align-self: flex-start;
+    }
+
+    .categoryHolder img{
+        margin-bottom: 1vw;
+    }
+
+    .categoryHolder{
+        margin: 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    footer{
+        min-height: auto;
+        padding-bottom: 20vw;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 2vw 2vw 0px 0px;
+        margin: 8vw 0vw 0vh 0vw;
+        box-shadow: 0px 0px 80px rgb(80, 74, 53);
+    }
+
+    .anchorHolder{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .anchorHolder h4{
+        font-weight: 600;
+        font-size: 2.8vw;
+    }
+
+    .anchorHolder a{
+        font-weight: 400;
+        font-size: 2.6vw;
+    }
 
 }
 
 /* Tablets (portrait tablets, 768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
 
+    header{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        border-radius: 0vw 0vw 2vw 2vw;
+        box-shadow: 0px 0px 80px rgb(125, 117, 90);
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .banner{
+        margin: 1vw;
+        width: 90vw;
+        border-radius: 2vw;
+    }
+
+    .logo{
+        display: none;
+        border-radius: 50%;
+        object-fit: cover;
+        z-index: 1;
+        width: 14vw;
+        box-shadow: 0px 0px 40px 15px rgb(120, 120, 106);
+    }
+
+    #logoText{
+        flex: 1;
+        text-align: right;
+        font-size: 2.8vw;
+        margin: 0vw 5vw 0vw 0vw;
+        font-weight: 200;
+    }
+
+
+    #logoHolder{
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #topSpaceFiller{
+        min-height:7vw;
+    }
+
+    #logoHolderFiller{
+        padding: 1.5vw;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navBarBtn{
+        position: relative;
+        z-index: 2;
+        width: 6%;
+        font-size: 1.2vw;
+        padding: 1vw;
+        border-radius: 1em;
+        transition: all 100ms ease-in-out;
+        text-align: center;
+    }
+
+    .navBarBtn:hover{
+        box-shadow: 0px 0px 60px 2px rgb(187, 184, 167);
+        z-index: 3;
+    }
+
+    .emptySpace{
+        flex: 1;
+    }
+
+    #navBar{
+        max-height: 4vw;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        z-index: 4;
+        display: flex;
+        padding: 1.5vw;
+    }
+
+    #navBar div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #searchBarHolder{
+        flex: 1;
+        display: flex;
+        /* margin: 0.5vw 0vw 0.5vw 0.5vw; */
+    }
+
+    #searchBarHolder *{
+        font-size: 2.2vw;
+    }
+
+    #search{
+        padding: 1.3vw;
+        border-radius: 2vw 0vw 0vw 2vw;
+        border: none;
+        min-width: 40vw;
+    }
+
+    #search:active{
+        border: 4px block black;
+    }
+
+    #submitBtn{
+        padding: 1.3vw;
+        border-radius: 0vw 2vw 2vw 0vw;
+        border: none;
+    }
+
+    #categoriesGridHolder{
+        padding: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #categoriesText{
+        margin: 4vw 0vw 4vw 0vh;
+        font-size: 4vw;
+    }
+
+    #categoriesGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 2vw;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .category{
+        border-radius: 1vw;
+        width: auto;
+        height: auto;
+        scale: 100%;
+        box-shadow: 0px 0px 0px 0px rgb(175, 174, 147);
+        transition: 80ms ease-in-out;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .category:hover{
+        scale: 102%;
+        box-shadow: 0px 0px 10px 5px rgb(175, 174, 147);
+    }
+
+    /* .category img{
+        max-width: 100%; 
+    } */
+
+    .categoryHolder *{
+        font-size: 2.2vw;
+        font-weight: 100;
+    }
+
+    .categoryHolder data{
+        font-weight: 500;
+    }
+
+    .categoryHolder p{
+        font-weight: 600;
+    }
+
+    .categoryHolder data, p{
+        margin: 0% 0% 0% 5%;
+        align-self: flex-start;
+    }
+
+    .categoryHolder img{
+        margin-bottom: 1vw;
+    }
+
+    .categoryHolder{
+        margin: 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    footer{
+        min-height: auto;
+        padding-bottom: 20vw;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 2vw 2vw 0px 0px;
+        margin: 8vw 0vw 0vh 0vw;
+        box-shadow: 0px 0px 80px rgb(80, 74, 53);
+    }
+
+    .anchorHolder{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .anchorHolder h4{
+        font-weight: 600;
+        font-size: 2.8vw;
+    }
+
+    .anchorHolder a{
+        font-weight: 400;
+        font-size: 2.6vw;
+    }
+
 }
 
 /* Laptops (1024px to 1200px) */
 @media (min-width: 1024px) and (max-width: 1200px) {
 
+    header{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        border-radius: 0vw 0vw 2vw 2vw;
+        box-shadow: 0px 0px 80px rgb(125, 117, 90);
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .banner{
+        margin: 1vw;
+        width: 70vw;
+        border-radius: 2vw;
+    }
+
+    .logo{
+        border-radius: 50%;
+        object-fit: cover;
+        z-index: 1;
+        width: 14vw;
+        box-shadow: 0px 0px 40px 15px rgb(120, 120, 106);
+    }
+
+    #logoText{
+        flex: 1;
+        text-align: right;
+        font-size: 2vw;
+        margin: 0vw 5vw 0vw 0vw;
+        font-weight: 200;
+    }
+
+
+    #logoHolder{
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #topSpaceFiller{
+        min-height:4vw;
+    }
+
+    #logoHolderFiller{
+        padding: 1.5vw;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navBarBtn{
+        position: relative;
+        z-index: 2;
+        width: 6%;
+        font-size: 1.2vw;
+        padding: 1vw;
+        border-radius: 1em;
+        transition: all 100ms ease-in-out;
+        text-align: center;
+    }
+
+    .navBarBtn:hover{
+        box-shadow: 0px 0px 60px 2px rgb(187, 184, 167);
+        z-index: 3;
+    }
+
+    .emptySpace{
+        flex: 1;
+    }
+
+    #navBar{
+        max-height: 3vw;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        z-index: 4;
+        display: flex;
+        padding: 1.2vw;
+    }
+
+    #navBar div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #searchBarHolder{
+        flex: 1;
+        display: flex;
+        /* margin: 0.5vw 0vw 0.5vw 0.5vw; */
+    }
+
+    #searchBarHolder *{
+        font-size: 1.4vw;
+    }
+
+    #search{
+        padding: 1vw;
+        border-radius: 2vw 0vw 0vw 2vw;
+        border: none;
+        min-width: 50vw;
+    }
+
+    #search:active{
+        border: 4px block black;
+    }
+
+    #submitBtn{
+        padding: 1vw;
+        border-radius: 0vw 2vw 2vw 0vw;
+        border: none;
+    }
+
+    #categoriesGridHolder{
+        padding: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #categoriesText{
+        margin: 2vw 0vw 2vw 0vh;
+        font-size: 3vw;
+    }
+
+    #categoriesGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 2vw;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .category{
+        border-radius: 1vw;
+        width: auto;
+        height: auto;
+        scale: 100%;
+        box-shadow: 0px 0px 0px 0px rgb(175, 174, 147);
+        transition: 80ms ease-in-out;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .category:hover{
+        scale: 102%;
+        box-shadow: 0px 0px 10px 5px rgb(175, 174, 147);
+    }
+
+    /* .category img{
+        max-width: 100%; 
+    } */
+
+    .categoryHolder *{
+        font-size: 1.6vw;
+        font-weight: 100;
+    }
+
+    .categoryHolder data{
+        font-weight: 500;
+    }
+
+    .categoryHolder p{
+        font-weight: 600;
+    }
+
+    .categoryHolder data, p{
+        margin: 0% 0% 0% 5%;
+        align-self: flex-start;
+    }
+
+    .categoryHolder img{
+        margin-bottom: 1vw;
+    }
+
+    .categoryHolder{
+        margin: 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    footer{
+        min-height: auto;
+        padding-bottom: 10vw;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 2vw 2vw 0px 0px;
+        margin: 4vw 0vw 0vh 0vw;
+        box-shadow: 0px 0px 80px rgb(80, 74, 53);
+    }
+
+    .anchorHolder{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .anchorHolder h4{
+        font-weight: 600;
+        font-size: 1.8vw;
+    }
+
+    .anchorHolder a{
+        font-weight: 400;
+        font-size: 1.6vw;
+    }
+
 }
 
 /* Desktops (1200px and up) */
 @media (min-width: 1200px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        border-radius: 0vw 0vw 2vw 2vw;
+        box-shadow: 0px 0px 80px rgb(125, 117, 90);
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .banner{
+        margin: 1vw;
+        width: 70vw;
+        border-radius: 2vw;
+    }
+
+    .logo{
+        border-radius: 50%;
+        object-fit: cover;
+        z-index: 1;
+        width: 14vw;
+        box-shadow: 0px 0px 40px 15px rgb(120, 120, 106);
+    }
+
+    #logoText{
+        flex: 1;
+        text-align: right;
+        font-size: 2vw;
+        margin: 0vw 5vw 0vw 0vw;
+        font-weight: 200;
+    }
+
+
+    #logoHolder{
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #topSpaceFiller{
+        min-height:4vw;
+    }
+
+    #logoHolderFiller{
+        padding: 1.5vw;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navBarBtn{
+        position: relative;
+        z-index: 2;
+        width: 6%;
+        font-size: 1.2vw;
+        padding: 1vw;
+        border-radius: 1em;
+        transition: all 100ms ease-in-out;
+        text-align: center;
+    }
+
+    .navBarBtn:hover{
+        box-shadow: 0px 0px 60px 2px rgb(187, 184, 167);
+        z-index: 3;
+    }
+
+    .emptySpace{
+        flex: 1;
+    }
+
+    #navBar{
+        max-height: 3vw;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        z-index: 4;
+        display: flex;
+        padding: 1.2vw;
+    }
+
+    #navBar div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #searchBarHolder{
+        flex: 1;
+        display: flex;
+        /* margin: 0.5vw 0vw 0.5vw 0.5vw; */
+    }
+
+    #searchBarHolder *{
+        font-size: 1.4vw;
+    }
+
+    #search{
+        padding: 1vw;
+        border-radius: 2vw 0vw 0vw 2vw;
+        border: none;
+        min-width: 50vw;
+    }
+
+    #search:active{
+        border: 4px block black;
+    }
+
+    #submitBtn{
+        padding: 1vw;
+        border-radius: 0vw 2vw 2vw 0vw;
+        border: none;
+    }
+
+    #categoriesGridHolder{
+        padding: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #categoriesText{
+        margin: 2vw 0vw 2vw 0vh;
+        font-size: 3vw;
+    }
+
+    #categoriesGrid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 2vw;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .category{
+        border-radius: 1vw;
+        width: auto;
+        height: auto;
+        scale: 100%;
+        box-shadow: 0px 0px 0px 0px rgb(175, 174, 147);
+        transition: 80ms ease-in-out;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .category:hover{
+        scale: 102%;
+        box-shadow: 0px 0px 10px 5px rgb(175, 174, 147);
+    }
+
+    /* .category img{
+        max-width: 100%; 
+    } */
+
+    .categoryHolder *{
+        font-size: 1.4vw;
+        font-weight: 100;
+    }
+
+    .categoryHolder data{
+        font-weight: 500;
+    }
+
+    .categoryHolder p{
+        font-weight: 600;
+    }
+
+    .categoryHolder data, p{
+        margin: 0% 0% 0% 5%;
+        align-self: flex-start;
+    }
+
+    .categoryHolder img{
+        margin-bottom: 1vw;
+    }
+
+    .categoryHolder{
+        margin: 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    footer{
+        min-height: auto;
+        padding-bottom: 10vw;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 2vw 2vw 0px 0px;
+        margin: 4vw 0vw 0vh 0vw;
+        box-shadow: 0px 0px 80px rgb(80, 74, 53);
+    }
+
+    .anchorHolder{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .anchorHolder h4{
+        font-weight: 600;
+        font-size: 1.6vw;
+    }
+
+    .anchorHolder a{
+        font-weight: 400;
+        font-size: 1.4vw;
+    }
 
 }
