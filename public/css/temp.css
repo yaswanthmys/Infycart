@@ -5,6 +5,11 @@ rgb(165, 157, 132)
 rgb(215, 211, 191)
 */
 
+::selection {
+    background: #bbb08b;   /* highlight color */
+    color: #000;          /* text color */
+}
+
 :root{
     --bgIntro: rgb(236, 235, 222);
     --bgHeader: rgb(215, 211, 191);
@@ -163,7 +168,7 @@ body{
 }
 
 #logoHolderFiller{
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -206,7 +211,7 @@ body{
     align-items: center;
     justify-content: center;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 4;
     display: flex;
     padding: 0.9vh;
@@ -376,7 +381,105 @@ footer{
     text-decoration: underline;
 }
 
+#product-flexHolderAligner{
+    display: flex;
+    flex-direction: column;
+    margin: 0vw 3vw 0vw 3vw;
+    font-family: "Montserrat", sans-serif;
+}
 
+#product-flexHolderEmptySpace{
+    width: calc(100% - 5vw);
+    padding: 2.5vw;
+}
+
+#product-flexHolder{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-flexChild{
+    width: 50%;
+    height: auto;
+}
+
+.product-imgHolder{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ .product-rightFlex{
+    position: relative;
+ }
+
+#product-rightFlexChild{
+    position: sticky !important;
+    top: 5vw !important;
+    padding: 4vw;
+}
+
+#product-rightFlexChild h2{
+    font-size: 3vw;
+    margin: 0px 0px 2vw 0px;
+}
+
+#product-rightFlexChild data{
+    font-size: 2vw;
+}
+
+#product-rightFlexChild p{
+    margin: 0px;
+    font-size: 0.9vw;
+}
+
+#product-rightFlexChild #product-buy{
+    background-color: rgb(37, 211, 102);
+    border: 0.2vw solid transparent;
+    height: auto;
+    width: 80%;
+    padding: 1vw;
+    margin: 4vw 2vw 0.5vw 2vw;
+    border-radius: 9999999px;
+    font-size: 1.2vw;
+    transition: all 100ms;
+}
+
+#product-rightFlexChild #product-buy:hover{
+    background-color: transparent;
+    border: rgb(37, 211, 102) 0.2vw solid;
+}
+
+#product-rightFlexChild #product-buy:active{
+    transform: scale(102%);
+}
+
+#product-rightFlexChild #product-share{
+    background-color: rgb(0, 0, 0);
+    border: 0.2vw solid transparent;
+    height: auto;
+    width: 80%;
+    padding: 1vw;
+    margin: 0.5vw 2vw 4vw 2vw;
+    border-radius: 9999999px;
+    font-size: 1.2vw;
+    color: rgb(255, 255, 255);
+    transition: all 100ms;
+}
+
+#product-rightFlexChild #product-share:hover{
+    background-color: transparent;
+    border: rgb(0, 0, 0) 0.2vw solid;
+    color: rgb(0, 0, 0);
+}
+
+#product-rightFlexChild #product-share:active{
+    transform: scale(102%);
+}
+
+#product-rightFlexChild p:last-child{
+    font-size: 1.5vw;
+}
 
 
 /* Small devices (phones, portrait, less than 600px) */
@@ -436,7 +539,7 @@ footer{
 
     #logoHolderFiller{
         padding: 1.5vw;
-        width: 100vw;
+        width: calc(100% - 3vw);
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -667,7 +770,7 @@ z
 
     #logoHolderFiller{
         padding: 1.5vw;
-        width: 100vw;
+        width: calc(100% - 3vw);
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -698,7 +801,7 @@ z
         align-items: center;
         justify-content: center;
         position: fixed;
-        width: 100vw;
+        width: 100%;
         z-index: 4;
         display: flex;
         padding: 2vw;
@@ -897,7 +1000,7 @@ z
 
     #logoHolderFiller{
         padding: 1.5vw;
-        width: 100vw;
+        width: calc(100% - 3vw);
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -928,7 +1031,7 @@ z
         align-items: center;
         justify-content: center;
         position: fixed;
-        width: 100vw;
+        width: 100%;
         z-index: 4;
         display: flex;
         padding: 1.5vw;
@@ -1126,7 +1229,7 @@ z
 
     #logoHolderFiller{
         padding: 1.5vw;
-        width: 100vw;
+        width: calc(100% - 3vw);
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -1157,7 +1260,7 @@ z
         align-items: center;
         justify-content: center;
         position: fixed;
-        width: 100vw;
+        width: 100%;
         z-index: 4;
         display: flex;
         padding: 1.2vw;
@@ -1355,7 +1458,7 @@ z
 
     #logoHolderFiller{
         padding: 1.5vw;
-        width: 100vw;
+        width: calc(100% - 3vw);
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -1382,14 +1485,14 @@ z
     }
 
     #navBar{
-        max-height: 3vw;
+        max-height: auto;
         align-items: center;
         justify-content: center;
         position: fixed;
-        width: 100vw;
+        width: 100%;
         z-index: 4;
         display: flex;
-        padding: 1.2vw;
+        padding: 0.5vw;
     }
 
     #navBar div{
@@ -1406,11 +1509,11 @@ z
     }
 
     #searchBarHolder *{
-        font-size: 1.4vw;
+        font-size: 1vw;
     }
 
     #search{
-        padding: 1vw;
+        padding: 0.8vw;
         border-radius: 2vw 0vw 0vw 2vw;
         border: none;
         min-width: 50vw;
@@ -1421,7 +1524,7 @@ z
     }
 
     #submitBtn{
-        padding: 1vw;
+        padding: 0.8vw;
         border-radius: 0vw 2vw 2vw 0vw;
         border: none;
     }
@@ -1518,12 +1621,12 @@ z
 
     .anchorHolder h4{
         font-weight: 600;
-        font-size: 1.6vw;
+        font-size: 1.4vw;
     }
 
     .anchorHolder a{
         font-weight: 400;
-        font-size: 1.4vw;
+        font-size: 1.2vw;
     }
 
 }
